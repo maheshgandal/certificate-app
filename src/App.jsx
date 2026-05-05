@@ -45,8 +45,8 @@ function App() {
       {/* Page Content */}
       <div className="flex-grow">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/certificate/:id" element={<CertificateCard />} />
+          <Route path="certificate-app/" element={<Home />} />
+          <Route path="certificate-app/certificate/:id" element={<CertificateCard />} />
         </Routes>
       </div>
 
