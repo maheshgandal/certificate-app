@@ -2,12 +2,15 @@
   "name": "certificate-app",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://crsorgi.github.io/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "lint": "eslint ."
   },
   "dependencies": {
     "react": "^19.2.5",
@@ -26,6 +29,7 @@
     "globals": "^17.5.0",
     "postcss": "^8.5.14",
     "tailwindcss": "^4.2.4",
-    "vite": "^8.0.10"
+    "vite": "^8.0.10",
+    "gh-pages": "^6.3.0"
   }
 }
