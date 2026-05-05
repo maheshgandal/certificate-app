@@ -2,7 +2,7 @@
   "name": "certificate-app",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://crsorgi.github.io/certificate-app",
+  "homepage": "https://maheshgandal.github.io/certificate-app",
   "type": "module",
   "scripts": {
     "dev": "vite",
