@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+    flex-wrap: wrap; /* CRITICAL: Allows images to drop to the next line on small screens */
+    justify-content: center;
+    align-items: center; /* Centers images vertically if they have different heights */
+    gap: 30px; /* Slightly reduced gap so more fit on medium screens */
+    margin-bottom: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 40px;
+}
+
+.footer img {
+    max-width: 150px; /* Sets a maximum width, but allows shrinking */
+    height: 60px; /* Keeps a uniform height for a clean row */
+    object-fit: contain; /* Ensures the image doesn't distort/stretch to fill the space */
+    background-color: transparent; /* Optional: adjust if some logos have white backgrounds */
+}
+
+/* Optional: Shrink images slightly on smaller mobile screens for a better fit */
+@media (max-width: 576px) {
+    .footer img {
+        max-width: 110px;
+        height: 45px;
+    }
+    .footer {
+        gap: 15px;
+    }
+}

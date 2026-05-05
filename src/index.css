@@ -1,0 +1,11 @@
+#main{
+  display: flex;
+  justify-content: space-between;
+}
+
+#left{
+  background-image: "url('./hrb.png')";
+  background-size: "cover";
+  background-position: "left center";
+  background-repeat: "no-repeat";
+}

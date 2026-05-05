@@ -1,0 +1,39 @@
+/* Certificate.css */
+
+/* 1. The new outer page border */
+.page-border {
+    border-radius: 8px;
+    max-width: 550px;
+    align-items: center;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 12px -12px 10px rgba(0, 0, 0, 0.12), 6px -6px 15px rgba(44, 93, 143, 0.15) !important;
+}
+
+/* 2. Default Desktop Table Sizing */
+.responsive-table td {
+    font-size: 0.90rem;
+    padding: 8px 16px;
+    border-color: #dee2e6; /* Ensures the inner grid lines are visible */
+}
+
+/* 3. Mobile Layout: Reduce table size to fit small screens */
+@media (max-width: 576px) {
+    .page-border {
+        border-width: 1px !important; /* Slightly thinner outer border on small screens */
+    }
+    
+    .responsive-table td {
+        font-size: 0.75rem; /* Shrinks the text size */
+        padding: 6px 8px;   /* Tightens the cell padding so the table takes up less space */
+    }
+}
+
+
+tr, td{
+    border: 1px solid black;
+}
+
+table{
+    width: 100%;
+}
